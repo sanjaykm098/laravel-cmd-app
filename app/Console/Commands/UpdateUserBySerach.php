@@ -53,7 +53,7 @@ class UpdateUserBySerach extends Command
         }
         $responses = form($user)
             ->text('What is your name?', required: true, name: 'name', default: $user->name)
-            ->text('What is your email?', required: true, name: 'email', default: $user->email, validate: 'required|email')
+            ->text('What is your email?', required: true, name: 'email', default: $user->email, validate: 'required|email|unique:users,email,' . $user->id)
             ->password(
                 label: 'What is your password?',
                 validate: ['password' => 'nullable|min:8'],

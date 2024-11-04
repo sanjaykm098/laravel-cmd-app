@@ -22,7 +22,7 @@ class ViewAllUser extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'View all users in the database';
 
     /**
      * Execute the console command.

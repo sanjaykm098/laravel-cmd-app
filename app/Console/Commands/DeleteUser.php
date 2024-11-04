@@ -9,9 +9,7 @@ use function Laravel\Prompts\alert;
 use function Laravel\Prompts\clear;
 use function Laravel\Prompts\confirm;
 use function Laravel\Prompts\multisearch;
-use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\progress;
-use function Laravel\Prompts\spin;
 
 class DeleteUser extends Command
 {
@@ -27,7 +25,7 @@ class DeleteUser extends Command
      *
      * @var string
      */
-    protected $description = 'Delete user';
+    protected $description = 'Delete a user from the database';
 
     /**
      * Execute the console command.
